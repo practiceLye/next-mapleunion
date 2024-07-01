@@ -1,26 +1,29 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <mainView />
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import mainView from './view/mainView.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    mainView
   }
 }
 </script>
 
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'nanumDahang';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+}
+
+@font-face {
+    font-family: 'nanumDahang';
+    src: url('./fonts/나눔손글씨 다행체.ttf') format('truetype')
 }
 </style>
